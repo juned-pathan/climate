@@ -1,0 +1,91 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("sea-20881_512.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+h1{
+    background: linear-gradient(red,green,blue);
+    background-clip: text;
+    color:transparent;
+}
+
+.butt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top: 60%;
+    height: 100px;
+    width: 100%;
+    font-size: 32px;
+    justify-content: space-evenly;
+}
+button{
+    font-size: 22px;
+    color: white;
+    background-color: red;
+    box-shadow: 10px;
+    height: 40px;
+    border-radius: 12px;
+    width: 150px;
+}
+
+#Rrun:hover{
+    cursor: pointer;
+    
+   color: white;
+   box-sizing: border-box;
+   border: 2px dashed black;
+   animation: Rain 3s ease-in-out infinite;
+   position: relative;
+}
+@keyframes Rain {
+    0%{
+       background: linear-gradient( to bottom , black,white);
+      
+    }
+    50%{
+      background: linear-gradient( to bottom rgba(0, 0, 0, 0.473), white,);
+       transform: scale(1);
+       
+    }
+    100%{
+      background-color: rgb(255, 0, 55);
+    }
+    
+}
+
+#Rstop:hover{
+    cursor: pointer;
+   
+  box-sizing: border-box;
+   border: 2px dashed black;
+   animation: RainS 3s ease-in-out infinite;
+   position: relative;
+}
+@keyframes RainS {
+    0%{
+       background: linear-gradient( to bottom , skyblue,white);
+      
+    }
+    50%{
+      background: linear-gradient( to bottom , white,green);
+       transform: scale(1);
+       
+    }
+    100%{
+      background-color: rgb(255, 0, 55);
+    }
+    
+}
+
